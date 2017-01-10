@@ -1,0 +1,169 @@
+/*
+Luke Darrow 11349190
+CptS 483 HW1
+*/
+
+body {
+	font-family:Verdana, Arial, sans-serif;
+
+	font-size:13px;
+	
+	min-width:1050px;
+	max-width:1920px;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	background-color: white;
+
+	border: 50px solid rgb(220,220,220);
+	padding:15px;
+}
+
+footer {
+	padding: 10px;
+	clear: both;
+}
+
+pre {
+	border:1px solid rgb(180,180,180);
+	padding: 15px;
+	color: rgb(80, 80, 80);
+}
+
+/* link style stuff */
+a:link {
+	text-decoration: none;
+	color: rgb(40, 40, 80);
+}
+
+a:visited {
+	color: rgb(40, 40, 80);
+}
+
+a:hover {
+	color: blue;
+}
+
+/* headers */
+header {
+	color: rgb(40, 40, 80);
+}
+
+h1 {
+	font-size: 25px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+h2 {
+	font-size:14px;
+	padding-bottom:10px;
+	font-weight:normal;
+	color: rgb(80,80,80);
+}
+
+h3 {
+	font-size:12px;
+	padding-top: 10px;
+}
+
+p {
+	padding-top:30px;
+	padding-bottom:15px;
+}
+
+section {
+	
+}
+
+table {
+	font-size: 15px;
+	font-weight: normal;
+	border-spacing: 15px;
+	border-collapse: separate;
+}
+
+tr {
+	color: black;
+}
+
+th {
+	color: black;
+}
+
+td {
+	color: rgb(60,60,60);
+}
+
+article {
+	border-bottom:double;
+	border-color:rgb(180,180,180);
+	padding-bottom:15px;
+	padding-top:25px;
+}
+
+article a:link {
+	text-decoration: underline:
+	color: blue;
+}
+
+article a:visited {
+	text-decoration: underline:
+	color: purple;
+}
+
+/* navbar with dropdown */
+nav div {
+	border-top: solid 1px rgb(170,170,170);
+	border-bottom: solid 1px rgb(170, 170, 170);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+/* hides elements to be dropped down */
+ul ul {
+	position: absolute;
+	display: none;
+	
+}
+
+li:hover > ul {
+	display: block;
+	margin-top: 10px;
+	background-color: rgb(170,170,170);
+}
+
+/* getting the stuff to be on the right side of the blog */
+div aside {
+	padding: 15px;
+}
+
+.site-content {
+	float:left;
+	min-width: 500px;
+	max-width: 850px;
+}
+
+.widget-area {
+	float:right;
+	min-width: 250px;
+	max-width: 300px;
+}
+
+/* get rid of assistive text */
+nav a.assistive-text {
+	position: fixed;
+	left: -1200px;
+}

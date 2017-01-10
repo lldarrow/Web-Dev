@@ -1,0 +1,145 @@
+/*
+Luke Darrow 11349190
+CptS 483 HW1
+*/
+
+body {
+	font-family:Verdana, Arial, sans-serif;
+
+	font-size:14px;
+	
+	
+	max-width:780px;
+
+	margin-left:auto;
+	margin-right:auto;
+
+	background-color: white;
+
+	padding:10px;
+}
+
+footer {
+	padding: 10px;
+	clear: both;
+}
+
+pre {
+	border:1px solid rgb(180,180,180);
+	padding: 10px;
+	max-width: 700px;
+	overflow: scroll;
+	color: rgb(80, 80, 80);
+}
+
+/* link style stuff */
+a:link {
+	text-decoration: none;
+	color: rgb(40, 40, 80);
+}
+
+a:visited {
+	color: rgb(40, 40, 80);
+}
+
+a:hover {
+	color: blue;
+}
+
+/* headers */
+header {
+	color: rgb(40, 40, 80);
+}
+
+h1 {
+	font-size: 25px;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+
+h2 {
+	font-size:14px;
+	padding-bottom:10px;
+	font-weight:normal;
+	color: rgb(80,80,80);
+}
+
+h3 {
+	font-size:20px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+p {
+	padding-top:30px;
+	padding-bottom:15px;
+}
+
+section {
+	
+}
+
+table {
+	font-size: 20px;
+	font-weight: normal;
+	border-spacing: 5px;
+	border-collapse: separate;
+	padding-top: 5px;
+	text-align: left;
+}
+
+aside {
+	text-align: center;
+}
+
+tr {
+	text-align: left;
+}
+
+th {
+	text-align: right;
+}
+
+td {
+	color: rgb(60,60,60);
+	font-weight: normal;
+	text-align: left;
+}
+
+article {
+	border-bottom:double;
+	border-color:rgb(180,180,180);
+	padding-bottom:15px;
+	padding-top:25px;
+	max-width: 700px;
+}
+
+article a:link {
+	text-decoration: underline:
+	color: blue;
+}
+
+article a:visited {
+	text-decoration: underline:
+	color: purple;
+}
+
+/* navbar with dropdown */
+
+
+.widget widget_calendar {
+	position: center;
+}
+
+.menu-main-container
+{
+	visibility: hidden;
+	font-size: 14px;
+	text-align: center;
+}
+
+/* get rid of assistive text */
+nav a.assistive-text {
+	position: fixed;
+	left: -1200px;
+}

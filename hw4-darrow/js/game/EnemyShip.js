@@ -1,0 +1,59 @@
+/*
+Luke Darrow 11349190
+CptS 483 Web Dev
+HW 4
+ */
+function EnemyShip(context, image, imageIndex, imageOffset, width, height, x, y)
+{
+    ScreenWidget.call(this, context);
+    var self = this;
+    self.image = image;
+    self.imageIndex = imageIndex;
+    self.imageOffset = imageOffset;
+    self.width = width;
+    self.height = height;
+    self.x = x;
+    self.y = y;
+    self.speed = 0.25;
+    self.move = 1;
+    self.hitbox = {x: self.x, y: self.y, width: 70, height: 91};
+
+    self.render = function()
+    {
+        self.context.drawImage(self.image,       //source image
+            self.imageIndex * self.imageOffset,  //sprite x offset
+            0,                                   //sprite y offset
+            self.width,                          //sprite width
+            self.height,                         //sprite height
+            self.x,                              //destination x
+            self.y,                              //destination y
+            self.width,                          //destination width (for scaling)
+            self.height);                        //destination height (for scaling)
+    };
+
+    self.update = function ()
+    {
+        self.y += self.speed;
+        self.x += self.move;
+        self.checkBoundary();
+    };
+
+    self.checkBoundary = function()
+    {
+        if(self.y > maxY)
+        {
+            //reset location
+            self.y = 0;
+        }
+        if(self.x > maxX - 70)
+        {
+            self.x -= 1;
+            self.move = -1;
+        }
+        else if(self.x < minX)
+        {
+            self.x += 1;
+            self.move = 1;
+        }
+    };
+}

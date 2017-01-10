@@ -1,0 +1,111 @@
+body {
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #660000;
+    color: #696969;
+    padding: 3px;
+}
+
+#main {
+    padding: 5px;
+    padding-left:  15px;
+    padding-right: 15px;
+    background-color: #330000;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#game_window {
+	padding: 15px;
+}
+
+#game_frame {
+	display: block;
+	margin: 0px auto;
+}
+
+#title {
+	display:block;
+	margin: 0px auto;
+	
+}
+
+#about_title {
+	display: block;
+	margin: 0px auto;
+}
+
+h1 {
+    font-family: Baskerville, Times New Roman, serif;
+	margin-bottom: 0px;
+	border-bottom: 3px solid #cc9900;
+    font-size: 50px;
+	color: red;
+	text-align: center;
+}
+
+h2 {
+	font-family: "Trebuchet MS", Verdana, sans-serif;
+    font-size: 24px;
+	color: #696969;
+	margin: 25px;
+}
+
+p {
+	margin: 25px;
+}
+
+footer{
+	font-family: Gothic, sans-serif;
+	font-size: 15px;
+	margin: 25px;
+}
+
+nav {
+	border-top: 3px solid #990000;
+	border-bottom: 3px solid #990000;
+}
+
+table {
+    width:100%;
+}
+
+table, th , td {
+    border: 1px solid #990000;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+ul#menu {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+ul#menu li {
+    display: inline;
+    margin-right: 3px;
+}
+
+ul#menu li a {
+    background: #800000;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px 4px 4px 4px;
+}
+
+ul#menu li a:hover {
+    color: white;
+    background-color: black;
+}
+

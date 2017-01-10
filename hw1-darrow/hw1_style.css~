@@ -1,0 +1,7 @@
+@import url('desktop.css') (min-width:787px);
+@import url('tablet.css') (max-width:780px);
+@import url('phone.css') (max-width:380px);
+
+/*
+the phone dimensions are based on the iphone 6 dimensions
+*/

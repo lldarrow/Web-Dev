@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+    <title>CptS 483</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+
+        <script type="text/javascript" src="js/game/ScreenWidget.js"></script>
+        <script type="text/javascript" src="js/game/Sword.js"></script>
+        <script type="text/javascript" src="js/game/Player.js"></script>
+        <script type="text/javascript" src="js/game/Enemy.js"></script>
+        <script type="text/javascript" src="js/game/StarGame.js"></script>
+        </head>
+<body id="body">
+<script>
+    $(document).ready(function(){
+        var game = new StarGame(document.getElementById("canvas"),
+        "images/knight.png","images/redtank.png", "images/sword.png", "images/sword.png"
+        );
+        game.begin();
+    });
+</script>
+<canvas id="canvas" width="1024" height="640">
+
+</canvas>
+</body>
+</html>
